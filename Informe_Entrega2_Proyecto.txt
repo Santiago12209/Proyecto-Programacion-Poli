@@ -1,0 +1,68 @@
+====================================================================
+POLITÉCNICO GRANCOLOMBIANO - INSTITUCIÓN UNIVERSITARIA
+FACULTAD DE INGENIERÍA, DISEÑO E INNOVACIÓN
+MÓDULO: CONCEPTOS FUNDAMENTALES DE PROGRAMACIÓN
+INFORME DE ESTADO DEL PROYECTO - ENTREGA 2 (SEMANA 5)
+====================================================================
+
+NOTA IMPORTANTE / JUSTIFICACIÓN PARA EL TUTOR:
+--------------------------------------------------------------------
+Estimado Profesor,
+
+Por medio del presente documento me permito informar que, debido a un 
+accidente de tránsito en el cual sufrí una fractura de clavícula, no me fue 
+posible comunicarme a tiempo con mis compañeros de grupo antes de que realizaran 
+el envío inicial de la entrega. 
+
+Adjunto a mi entrega la respectiva incapacidad médica. Ya me he puesto en 
+contacto y acordado con mis compañeros de equipo para coordinar y participar 
+activamente en la realización de la siguiente entrega y la sustentación final 
+del proyecto. Asi mismo, hago envío de forma individual del trabajo completo 
+correspondiente a esta semana para su revisión y validación.
+
+Agradezco de antemano su comprensión y consideración.
+
+
+1. RESUMEN DEL AVANCE REALIZADO:
+--------------------------------------------------------------------
+Para la Entrega 2 de la Semana 5 se ha implementado la versión preliminar
+completa del sistema en Java.
+
+Componentes funcionales desarrollados e integrados:
+- Clase 'GenerateInfoFiles': Genera exitosamente los archivos planos de
+  prueba pseudoaleatorios (productos.txt, vendedores.txt y archivos
+  individuales por cada vendedor vendedor_[ID].txt).
+- Clase 'main': Procesa dinámicamente los archivos de entrada, acumula el
+  recaudo por vendedor y las unidades vendidas por producto. Genera los 
+  archivos de salida 'reporte_vendedores.csv' y 'reporte_productos.csv' 
+  ordenados de mayor a menor.
+- Módulos adicionales (Extras):
+  * Detección y omisión automática de registros con precios o cantidades
+    negativas.
+  * Omitir referencias de productos cuyo ID no exista en el archivo base.
+  * Procesamiento dinámico de múltiples archivos de vendedor en la carpeta.
+
+2. ELEMENTOS Y PARTES FALTANTES PARA LA ENTREGA FINAL (SEMANA 7 Y 8):
+--------------------------------------------------------------------
+A pesar de que el código actual cumple con el flujo funcional principal,
+quedan por ajustar y pulir los siguientes elementos para la entrega final:
+
+1) Archivo 'conslusion.txt':
+   Aún se debe redactar el archivo final solicitado con la reflexión sobre
+   los aprendizajes, aplicaciones profesionales y dificultades superadas.
+
+2) Optimización de Serialización de Objetos (Punto Extra B):
+   Se contempla añadir la opción de lectura/escritura mediante objetos 
+   serializados de Java (.dat) para acelerar el procesamiento de grandes 
+   volúmenes de ventas.
+
+3) Refactorización y Modularización Secundaria:
+   Se separarán las clases internas modelo (Vendedor, Producto) en archivos 
+   .java independientes dentro de una estructura de paquetes para mejorar 
+   la mantenibilidad según los estándares.
+
+4) Pruebas Unitarias Estructuradas:
+   Adición de casos de prueba adicionales con volúmenes masivos de datos 
+   (más de 1,000 vendedores) para verificar la eficiencia en tiempo y memoria.
+
+====================================================================
